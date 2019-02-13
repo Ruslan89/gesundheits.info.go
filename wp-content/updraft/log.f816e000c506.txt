@@ -1,0 +1,169 @@
+0000.002 (0) Opened log file at time: Wed, 13 Feb 2019 18:47:48 +0000 on http://gesundheits.info.go
+0000.004 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.5 WP: 5.0.3 PHP: 7.2.9 (fpm-fcgi, Linux 26a28f0304b7 4.9.93-boot2docker #1 SMP Thu Jul 19 18:29:50 UTC 2018 x86_64) MySQL: 5.7.23 WPLANG: en_US Server: nginx/1.14.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 3.4M | 2M) multisite: N openssl: OpenSSL 1.1.0f  25 May 2017 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.006 (0) Free space on disk containing Updraft's temporary directory: 164536.8 MB
+0000.016 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.024 (0) Semaphore (fd, wp_options) being initialised
+0000.027 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.030 (0) Set semaphore last lock (fd) time to 2019-02-13 18:47:48
+0000.031 (0) Semaphore lock (fd) complete
+0000.034 (0) Backup run: resumption=0, nonce=f816e000c506, file_nonce=f816e000c506 begun at=1550083668 (0s ago), job type=backup
+0000.036 (0) Scheduling a resumption (1) after 300 seconds (1550083968) in case this run gets aborted
+0000.063 (0) Checking if we have a zip executable available
+0000.067 (0) Creation of backups of directories: beginning
+0000.078 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0005.210 (0) Total entities for the zip file: 225 directories, 1418 files (0 skipped as non-modified), 23.9 MB
+0005.220 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0005.844 (0) Zip: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip.tmp: 100 files added (on-disk size: 42.3 KB)
+0006.325 (0) Zip: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip.tmp: 200 files added (on-disk size: 42.3 KB)
+0006.780 (0) Zip: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip.tmp: 300 files added (on-disk size: 42.3 KB)
+0007.169 (0) Zip: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip.tmp: 400 files added (on-disk size: 42.3 KB)
+0007.754 (0) Zip: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip.tmp: 500 files added (on-disk size: 42.3 KB)
+0007.769 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (19.7 MB, 1418 files batched, 501 (502) added so far); re-opening (prior size: 42.3 KB)
+0011.613 (0) Zip: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip.tmp: 600 files added (on-disk size: 5664.6 KB)
+0012.221 (0) Zip: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip.tmp: 700 files added (on-disk size: 5664.6 KB)
+0012.821 (0) Zip: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip.tmp: 800 files added (on-disk size: 5664.6 KB)
+0013.171 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (1.4 MB, 347 (849) files added so far); re-opening (prior size: 5664.6 KB)
+0015.257 (0) Zip: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip.tmp: 900 files added (on-disk size: 6193.1 KB)
+0016.015 (0) Zip: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip.tmp: 1000 files added (on-disk size: 6193.1 KB)
+0016.602 (0) Zip: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip.tmp: 1100 files added (on-disk size: 6193.1 KB)
+0017.170 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (2.2 MB, 348 (1197) files added so far); re-opening (prior size: 6193.1 KB)
+0019.040 (0) Zip: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip.tmp: 1200 files added (on-disk size: 6850.8 KB)
+0019.673 (0) Zip: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip.tmp: 1300 files added (on-disk size: 6850.8 KB)
+0020.239 (0) Zip: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip.tmp: 1400 files added (on-disk size: 6850.8 KB)
+0021.778 (0) Created plugins zip (0) - 7105.9 KB in 21.7 s (327.7 KB/s) (sha1: 7d584a6c59ba44fb4d24d1e644405c6ef326507a, sha256: 9d55c6a641d2852f13ba6bc4a65de1813be7e32b5391528e2088273c26d2af53)
+0021.793 (0) Beginning creation of dump of themes (split every: 400 MB)
+0021.965 (0) Total entities for the zip file: 10 directories, 75 files (0 skipped as non-modified), 1.1 MB
+0023.301 (0) Created themes zip (0) - 794.8 KB in 1.5 s (532.7 KB/s) (sha1: 09692e5067b747a9f7b157ec1c692bf485ef100b, sha256: 2226f4d120afc673b01f2fca0310262e6ed803d4cc7933530e246056d50b04a8)
+0023.316 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0023.318 (0) Looking for candidates to backup in: /app/public/wp-content/uploads
+0023.321 (0) finding files: 2019: adding to list (1)
+0023.322 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0023.348 (0) Total entities for the zip file: 2 directories, 0 files (0 skipped as non-modified), 0 MB
+0023.381 (0) Created uploads zip (0) - 0.2 KB in 0 s (5.1 KB/s) (sha1: b3e88e281e50bbd9137684f029430cc608a39378, sha256: 9c27754b7a428f6b0ad2aaf6b5a196d880604b21ebed5ba8c86bca308d20a624)
+0023.397 (0) Beginning backup of other directories found in the content directory (index: 0)
+0023.401 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0023.402 (0) Looking for candidates to backup in: /app/public/wp-content
+0023.404 (0) finding files: index.php: adding to list (1)
+0023.405 (0) finding files: mu-plugins: adding to list (2)
+0023.406 (0) finding files: plugins: skipping: this is the plugins directory
+0023.407 (0) finding files: themes: skipping: this is the themes directory
+0023.407 (0) finding files: updraft: skipping: this is the updraft directory
+0023.408 (0) finding files: upgrade: skipping: excluded by options
+0023.409 (0) finding files: uploads: skipping: this is the uploads directory
+0023.438 (0) Total entities for the zip file: 1 directories, 3 files (0 skipped as non-modified), 0 MB
+0023.493 (0) Created others zip (0) - 1.4 KB in 0.1 s (20.3 KB/s) (sha1: b9a66ec2cc8c1d92f2cb5cf6bb8e8c3a8006bd5e, sha256: 25d95ededdd7da11c6f8f5add75182b88dd169a7b425c75db86d392ee300ea4b)
+0023.516 (0) Saving backup status to database (elements: 8)
+0023.518 (0) Beginning creation of database dump (WordPress DB)
+0023.523 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0023.537 (0) Binary mysqldump: error (code: 2)
+0023.554 (0) Table wp_options: Total expected rows (approximate): 192
+0023.572 (0) Table wp_options: Total rows added: 191 in 0.02 seconds
+0023.582 (0) Table wp_options: finishing file (backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_options.table.gz - 97.5 KB)
+0023.594 (0) Table wp_users: Total expected rows (approximate): 1
+0023.596 (0) Table wp_users: Total rows added: 1 in 0.00 seconds
+0023.602 (0) Table wp_users: finishing file (backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_users.table.gz - 0.6 KB)
+0023.615 (0) Table wp_usermeta: Total expected rows (approximate): 18
+0023.618 (0) Table wp_usermeta: Total rows added: 18 in 0.00 seconds
+0023.624 (0) Table wp_usermeta: finishing file (backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_usermeta.table.gz - 1 KB)
+0023.637 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0023.639 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0023.645 (0) Table wp_commentmeta: finishing file (backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0023.657 (0) Table wp_comments: Total expected rows (approximate): 1
+0023.659 (0) Table wp_comments: Total rows added: 1 in 0.00 seconds
+0023.667 (0) Table wp_comments: finishing file (backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_comments.table.gz - 0.7 KB)
+0023.680 (0) Table wp_links: Total expected rows (approximate): 0
+0023.682 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0023.689 (0) Table wp_links: finishing file (backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_links.table.gz - 0.4 KB)
+0023.703 (0) Table wp_postmeta: Total expected rows (approximate): 2
+0023.705 (0) Table wp_postmeta: Total rows added: 2 in 0.00 seconds
+0023.712 (0) Table wp_postmeta: finishing file (backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_postmeta.table.gz - 0.4 KB)
+0023.727 (0) Table wp_posts: Total expected rows (approximate): 4
+0023.731 (0) Table wp_posts: Total rows added: 4 in 0.00 seconds
+0023.738 (0) Table wp_posts: finishing file (backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_posts.table.gz - 3.1 KB)
+0023.751 (0) Table wp_term_relationships: Total expected rows (approximate): 1
+0023.753 (0) Table wp_term_relationships: Total rows added: 1 in 0.00 seconds
+0023.759 (0) Table wp_term_relationships: finishing file (backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_term_relationships.table.gz - 0.4 KB)
+0023.774 (0) Table wp_term_taxonomy: Total expected rows (approximate): 1
+0023.776 (0) Table wp_term_taxonomy: Total rows added: 1 in 0.00 seconds
+0023.782 (0) Table wp_term_taxonomy: finishing file (backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_term_taxonomy.table.gz - 0.4 KB)
+0023.798 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0023.800 (0) Table wp_termmeta: Total rows added: 0 in 0.00 seconds
+0023.806 (0) Table wp_termmeta: finishing file (backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_termmeta.table.gz - 0.4 KB)
+0023.819 (0) Table wp_terms: Total expected rows (approximate): 1
+0023.823 (0) Table wp_terms: Total rows added: 1 in 0.00 seconds
+0023.829 (0) Table wp_terms: finishing file (backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_terms.table.gz - 0.4 KB)
+0023.843 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_options.table.gz (1/12): adding to final database dump
+0023.863 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_users.table.gz (2/12): adding to final database dump
+0023.866 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_usermeta.table.gz (3/12): adding to final database dump
+0023.871 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_commentmeta.table.gz (4/12): adding to final database dump
+0023.873 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_comments.table.gz (5/12): adding to final database dump
+0023.876 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_links.table.gz (6/12): adding to final database dump
+0023.878 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_postmeta.table.gz (7/12): adding to final database dump
+0023.881 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_posts.table.gz (8/12): adding to final database dump
+0023.884 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_term_relationships.table.gz (9/12): adding to final database dump
+0023.886 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_term_taxonomy.table.gz (10/12): adding to final database dump
+0023.889 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_termmeta.table.gz (11/12): adding to final database dump
+0023.891 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-db-table-wp_terms.table.gz (12/12): adding to final database dump
+0023.900 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-db.gz: finished writing out complete database file (80 KB)
+0023.936 (0) Total database tables backed up: 12 (backup_2019-02-13-1847_Fictional_University_f816e000c506-db.gz, size: 105011, sha256)
+0023.945 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0023.946 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0023.947 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0023.949 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-others.zip: others: This file has not yet been successfully uploaded: will queue
+0023.951 (0) backup_2019-02-13-1847_Fictional_University_f816e000c506-db.gz: db: This file has not yet been successfully uploaded: will queue
+0023.952 (0) Saving backup history. Total backup size: 7.8 MB
+0023.955 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0023.960 (0) Cloud backup selection (1/1): dropbox with instance (1/1) (last)
+0023.963 (0) Beginning dispatch of backup to remote (dropbox) (instance identifier s-bc4013889a4f6e2a23b4571f721b4aee)
+0023.964 (0) Dropbox: begin cloud upload (using API version 2 with OAuth v2 token)
+0023.979 (0) Dropbox: access gained; setting chunk size to: 1024 KB
+0024.394 (0) Dropbox: quota usage: used=847.7 MB, total=2048 MB, available=1200.3 MB
+0024.399 (0) Dropbox: Attempt to upload: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip to: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip
+0026.417 (0) Dropbox chunked upload: 14.4 % uploaded (AAAAAAAAAVP6W3KXeleXoQ, 1048576, 4096 KB)
+0030.422 (0) Dropbox chunked upload: 72.1 % uploaded (AAAAAAAAAVP6W3KXeleXoQ, 5242880, 8704 KB)
+0033.787 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAVP6W3KXeleXoQ, 7276406, 8704 KB)
+0035.574 (0) Recording as successfully uploaded: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip
+0035.585 (0) Deleting local file: backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip: OK
+0035.586 (0) Dropbox: File upload success (backup_2019-02-13-1847_Fictional_University_f816e000c506-plugins.zip): 7105 KB in 11s (635 KB/s)
+0036.061 (0) Dropbox: quota usage: used=854.6 MB, total=2048 MB, available=1193.4 MB
+0036.069 (0) Dropbox: Attempt to upload: backup_2019-02-13-1847_Fictional_University_f816e000c506-themes.zip to: backup_2019-02-13-1847_Fictional_University_f816e000c506-themes.zip
+0037.797 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAVTTo9uskxVG7Q, 813854, 8704 KB)
+0039.076 (0) Recording as successfully uploaded: backup_2019-02-13-1847_Fictional_University_f816e000c506-themes.zip
+0039.088 (0) Deleting local file: backup_2019-02-13-1847_Fictional_University_f816e000c506-themes.zip: OK
+0039.091 (0) Dropbox: File upload success (backup_2019-02-13-1847_Fictional_University_f816e000c506-themes.zip): 794 KB in 3s (263 KB/s)
+0039.504 (0) Dropbox: quota usage: used=855.4 MB, total=2048 MB, available=1192.6 MB
+0039.511 (0) Dropbox: Attempt to upload: backup_2019-02-13-1847_Fictional_University_f816e000c506-uploads.zip to: backup_2019-02-13-1847_Fictional_University_f816e000c506-uploads.zip
+0040.093 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAVXJ7FsdBkfDfg, 232, 8704 KB)
+0041.366 (0) Recording as successfully uploaded: backup_2019-02-13-1847_Fictional_University_f816e000c506-uploads.zip
+0041.379 (0) Deleting local file: backup_2019-02-13-1847_Fictional_University_f816e000c506-uploads.zip: OK
+0041.383 (0) Dropbox: File upload success (backup_2019-02-13-1847_Fictional_University_f816e000c506-uploads.zip): 0 KB in 1s (0 KB/s)
+0041.889 (0) Dropbox: quota usage: used=855.4 MB, total=2048 MB, available=1192.6 MB
+0041.894 (0) Dropbox: Attempt to upload: backup_2019-02-13-1847_Fictional_University_f816e000c506-others.zip to: backup_2019-02-13-1847_Fictional_University_f816e000c506-others.zip
+0042.830 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAVYvjHgzsPCbgA, 1412, 8704 KB)
+0043.931 (0) Recording as successfully uploaded: backup_2019-02-13-1847_Fictional_University_f816e000c506-others.zip
+0043.946 (0) Deleting local file: backup_2019-02-13-1847_Fictional_University_f816e000c506-others.zip: OK
+0043.949 (0) Dropbox: File upload success (backup_2019-02-13-1847_Fictional_University_f816e000c506-others.zip): 1 KB in 2s (0 KB/s)
+0044.414 (0) Dropbox: quota usage: used=855.4 MB, total=2048 MB, available=1192.6 MB
+0044.421 (0) Dropbox: Attempt to upload: backup_2019-02-13-1847_Fictional_University_f816e000c506-db.gz to: backup_2019-02-13-1847_Fictional_University_f816e000c506-db.gz
+0045.205 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAVfjfcrQC3YWgQ, 105011, 8704 KB)
+0046.235 (0) Recording as successfully uploaded: backup_2019-02-13-1847_Fictional_University_f816e000c506-db.gz
+0046.249 (0) Deleting local file: backup_2019-02-13-1847_Fictional_University_f816e000c506-db.gz: OK
+0046.252 (0) Dropbox: File upload success (backup_2019-02-13-1847_Fictional_University_f816e000c506-db.gz): 102 KB in 1s (56 KB/s)
+0046.262 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0046.264 (0) Number of backup sets in history: 1; groups (db): 1
+0046.266 (0) Examining (for databases) backup set with group_id=0, nonce=f816e000c506, datestamp=1550083668 (Feb 13 2019 18:47:48)
+0046.268 (0) This backup set is the backup set just made, so will not be deleted.
+0046.268 (0) Number of backup sets in history: 1; groups (files): 1
+0046.270 (0) Examining (for files) backup set with nonce=f816e000c506, datestamp=1550083668 (Feb 13 2019 18:47:48)
+0046.270 (0) This backup set is the backup set just made, so will not be deleted.
+0046.272 (0) This backup set is the backup set just made, so will not be deleted.
+0046.273 (0) This backup set is the backup set just made, so will not be deleted.
+0046.273 (0) This backup set is the backup set just made, so will not be deleted.
+0046.273 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0046.275 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0046.279 (0) Resume backup (f816e000c506, 0): finish run
+0046.284 (0) Decremented the semaphore (fd) by 1
+0046.286 (0) Semaphore (fd) unlocked
+0046.287 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0046.293 (0) No email will/can be sent - the user has not configured an email address.
+0046.294 (0) The backup apparently succeeded and is now complete
