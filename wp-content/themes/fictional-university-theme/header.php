@@ -14,12 +14,15 @@
       <div class="site-header__menu group">
         <nav class="main-navigation">
           <ul>
-            <li <?php if (is_page('about-us') or wp_get_post_parent_id(0) == 16) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/about-us') ?>">About Us</a></li>
-            <li <?php if (get_post_type() == 'program') echo 'class="current-menu-item"' ?>><a href="<?php echo get_post_type_archive_link('program') ?>">Programs</a></li>
-            <li <?php if (get_post_type() == 'event' OR is_page('past-events')) echo 'class="current-menu-item"';  ?>><a href="<?php echo get_post_type_archive_link('event'); ?>">Events</a></li>
-            <li <?php if (get_post_type() == 'campus') echo 'class="current-menu-item"' ?>><a href="<?php echo get_post_type_archive_link('campus'); ?>">Campuses</a></li>
-            <li <?php if (get_post_type() == 'post') echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/blog'); ?>">Blog</a></li>
-          </ul>
+          <li <?php if (get_post_type() == 'post') echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/magazin'); ?>">Magazin</a></li>	            
+	            <li <?php if (get_post_type() == 'beschwerde') echo 'class="current-menu-item"' ?>><a href="<?php echo get_post_type_archive_link('beschwerde'); ?>">Beschwerden</a></li>
+	            <li <?php if (get_post_type() == 'heilmittel') echo 'class="current-menu-item"' ?>><a href="<?php echo get_post_type_archive_link('heilmittel'); ?>">Heilmittel</a></li>
+	            <li <?php if (get_post_type() == 'vitalstoff') echo 'class="current-menu-item"' ?>><a href="<?php echo get_post_type_archive_link('vitalstoff'); ?>">Vitalstoffe</a></li>	            
+	            <!--//Menu Farbmarkierung: Wenn wir bei "ueber uns" (Seiten Nummer=20/in WP nachschauen) sind, oder auf einer Child Seite, dann wird das Farbschema 'current-menu-item' abgerufen-->
+							<li <?php if (is_page('ueber-uns') or wp_get_post_parent_id(0) == 20) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/ueber-uns'); ?>">Über uns</a></li>
+							<li ><a href="<?php echo site_url('/newsletter'); ?>">Newsletter</a></li>
+							<li ><a href="<?php echo site_url('/erfahrungsberichte'); ?>">Erfahrungsberichte</a></li>
+	          </ul>
         </nav>
         <div class="site-header__util">
           <?php if(is_user_logged_in()) { ?>

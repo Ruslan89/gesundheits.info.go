@@ -3,7 +3,7 @@
 get_header();
 pageBanner(array(
   'title' => 'Past Events',
-  'subtitle' => 'A recap of our past events.'
+  'subtitle' => 'Vergangene Events'
 ));
  ?>
 
