@@ -16,6 +16,6 @@
 				} else {
 				echo wp_trim_words(get_field('main_body_content'), 20); 
 				} ?>
-				<p><a class="btn btn--blue-margin-top" href="<?php the_permalink(); ?>">Lesen &raquo;</a></p>
+				<p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Lesen &raquo;</a></p>
 		</div>
-	</div> 
+	</div>

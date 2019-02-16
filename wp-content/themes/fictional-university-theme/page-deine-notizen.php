@@ -17,11 +17,11 @@
     <div class="container container--narrow page-section">
       
       <div class="create-note">
-        <h2 class="headline headline--medium">Create New Note</h2>
-        <input class="new-note-title" placeholder="Title">
-        <textarea class="new-note-body" placeholder="Your note here..."></textarea>
-        <span class="submit-note">Create Note</span>
-        <span class="note-limit-message">Note limit reached: delete an existing note to make room for a new one.</span>
+        <h2 class="headline headline--medium">Neue Notiz erstellen</h2>
+        <input class="new-note-title" placeholder="Titel">
+        <textarea class="new-note-body" placeholder="Deine Notiz..."></textarea>
+        <span class="submit-note">Notiz erstellen</span>
+        <span class="note-limit-message">Notiz Anzahl erreicht. Lösche erst alte Notizen.</span>
       </div>
 
       <ul class="min-list link-list" id="my-notes">
@@ -36,10 +36,10 @@
             $userNotes->the_post(); ?>
             <li data-id="<?php the_ID(); ?>">
               <input readonly class="note-title-field" value="<?php echo str_replace('Private: ', '', esc_attr(get_the_title())); ?>">
-              <span class="edit-note"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</span>
-              <span class="delete-note"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</span>
+              <span class="edit-note"><i class="fa fa-pencil" aria-hidden="true"></i> Bearbeiten</span>
+              <span class="delete-note"><i class="fa fa-trash-o" aria-hidden="true"></i> Löschen</span>
               <textarea readonly class="note-body-field"><?php echo esc_textarea(get_the_content()); ?></textarea>
-              <span class="update-note btn btn--blue btn--small"><i class="fa fa-arrow-right" aria-hidden="true"></i> Save</span>
+              <span class="update-note btn btn--blue btn--small"><i class="fa fa-arrow-right" aria-hidden="true"></i> Speichern</span>
             </li>
           <?php }
 

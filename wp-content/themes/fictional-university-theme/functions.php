@@ -60,6 +60,11 @@ function university_files() {
 add_action('wp_enqueue_scripts', 'university_files');
 
 function university_features() {
+  register_nav_menu('headerMenuLocation', 'Header Menu Location'); //Menu Option wird in WP angezeigt
+	register_nav_menu('footerLocationOne', 'Footer Location One');   //Footer Menu. In WP angezeigt
+	register_nav_menu('footerLocationTwo', 'Footer Location Two');
+	//register_nav_menu('footerLocationTwo', 'Footer Location Three');
+
   add_theme_support('title-tag');
   add_theme_support('post-thumbnails');
   add_image_size('professorLandscape', 400, 260, true);
@@ -168,4 +173,32 @@ function makeNotePrivate($data, $postarr) {
   return $data;
 }
 
+// Archive Order by...
+$post_type = array('beschwerde',);
+
+function my_change_sort_order($query){
+	if(is_post_type_archive($post_type)):
+	 //If you wanted it for the archive of a custom post type use: is_post_type_archive( $post_type )
+	   //Set the order ASC or DESC
+	   $query->set( 'order', 'ASC' );
+	   //Set the orderby
+	   $query->set( 'orderby', 'title' );
+	endif;    
+}
+
+add_action( 'pre_get_posts', 'my_change_sort_order');
+
+$post_type2 = array('vitalstoff',);
+
+function my_change_sort_order2($query){
+	if(is_post_type_archive($post_type2)):
+	 //If you wanted it for the archive of a custom post type use: is_post_type_archive( $post_type )
+	   //Set the order ASC or DESC
+	   $query->set( 'order', 'ASC' );
+	   //Set the orderby
+	   $query->set( 'orderby', 'menu_order' );
+	endif;    
+}
+
+add_action( 'pre_get_posts', 'my_change_sort_order2');
 

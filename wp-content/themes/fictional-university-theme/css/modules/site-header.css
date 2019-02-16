@@ -1,10 +1,15 @@
 .site-header {
-  z-index: 3;
-  position: absolute;
+  z-index: 3;  
+  position: absolute; 
   top: 0;
   left: 0;
   right: 0;
   padding: 20px 0;
+  background-color: rgba($mainBlue, .9);
+
+  @mixin atMedium {
+    position: fixed;
+  }
 
   &__avatar {
     position: absolute;

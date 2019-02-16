@@ -12,7 +12,7 @@
 }
 
 .submit-note {
-  color: #FFF;
+  color: rgb(0, 0, 0);
   border: none;
   background-color: $darkOrange;
   line-height: 1.65;
@@ -98,7 +98,7 @@
 
 /* Create Note */
 .create-note {
-  background-color: #DDD;
+  background-color: $mainBlue;
   padding: 20px;
   margin-bottom: 20px;
 }

@@ -13,7 +13,7 @@
 }
 
 .page-section {
-  padding-top: 1.6rem;
+  padding-top: 2.6rem;
   padding-bottom: 1.6rem;
   @mixin atSmall {
     padding-top: 3.5rem;
@@ -36,9 +36,13 @@
 .school-logo-text {
   position: relative;
   z-index: 20;
-  margin: 0;
-  font-size: 1.75rem;
+  margin: 0px;
+  font-size: 1.5rem;
   font-weight: 100;
+
+}
+@mixin atSmall {
+  font-size: 2.75rem;
 }
 
 .school-logo-text strong {
@@ -51,6 +55,39 @@
 }
 
 .school-logo-text--alt-color a {
+  color: #666;
+
+  &:hover {
+    color: $mainBlue;
+    text-decoration: underline;
+  }
+}
+
+/*-------*/
+
+.school-logo-text2 {
+  position: relative;
+  z-index: 20;
+  margin: -20px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  padding: 22px 36px;
+
+}
+@mixin atSmall {
+  font-size: 2.75rem;
+}
+
+.school-logo-text2 strong {
+  font-weight: 400;
+}
+
+.school-logo-text2 a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.school-logo-text2--alt-color a {
   color: #666;
 
   &:hover {
