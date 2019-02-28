@@ -4,9 +4,9 @@
 
       <div class="group">
 
-        <div class="site-footer__col-one">
+        <!--<div class="site-footer__col-one">
           <h1 class="school-logo-text2 school-logo-text2--alt-color"><a href="<?php echo site_url(); ?>"><strong>Gesundheits</strong> Universum</a></h1>
-        </div>
+        </div>-->
 
         <div class="site-footer__col-two-three-group">
 

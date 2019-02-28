@@ -22,7 +22,7 @@
 
   p {
     margin: 0;
-    font-size: 1rem;
+    font-size: .9rem;
     color: color($beige l(-45%) s(-33%));
   }
 

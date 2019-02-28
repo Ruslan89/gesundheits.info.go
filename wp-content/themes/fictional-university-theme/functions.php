@@ -60,11 +60,6 @@ function university_files() {
 add_action('wp_enqueue_scripts', 'university_files');
 
 function university_features() {
-  register_nav_menu('headerMenuLocation', 'Header Menu Location'); //Menu Option wird in WP angezeigt
-	register_nav_menu('footerLocationOne', 'Footer Location One');   //Footer Menu. In WP angezeigt
-	register_nav_menu('footerLocationTwo', 'Footer Location Two');
-	//register_nav_menu('footerLocationTwo', 'Footer Location Three');
-
   add_theme_support('title-tag');
   add_theme_support('post-thumbnails');
   add_image_size('professorLandscape', 400, 260, true);
@@ -201,4 +196,29 @@ function my_change_sort_order2($query){
 }
 
 add_action( 'pre_get_posts', 'my_change_sort_order2');
+
+
+// Newsletter
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Home right sidebar',
+		'id'            => 'home_right_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );
+
+
+// Testimonials
+function your_function() {
+    //echo '<p>This is inserted at the bottom</p>';
+}
+add_action( 'wp_footer', 'your_function' );
+
+
 

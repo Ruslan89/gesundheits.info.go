@@ -56,7 +56,8 @@ body {
       
         &:hover{
           background-color: $darkOrange;
-          color: $btn-color;
+          color: #fff;
+
         }
 
         &:first-of-type{

@@ -1,3 +1,6 @@
+= 2.36 - Feb. 15, 2019 =
+* bug fixes and tweaks
+
 = 2.35 - Feb. 12, 2019 =
 * fixed multiple bugs with the submission form
 * fixes testimonial and star rating not displaying properly

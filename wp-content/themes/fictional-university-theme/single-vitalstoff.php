@@ -37,7 +37,7 @@ while(have_posts()) {
         <label for="tab-one"    id="tab-one-label"    class="tab"><?php the_field('content_part_1_headline'); ?></label>
         <label for="tab-two"    id="tab-two-label"    class="tab"><?php the_field('content_part_2_headline'); ?></label>
         <label for="tab-three"  id="tab-three-label"  class="tab">Häufig gestellte Fragen</label>
-        <label for="tab-four"   id="tab-four-label"   class="tab">Videos</label>
+        <label for="tab-four"   id="tab-four-label"   class="tab">Erfahurngsberichte</label>
 
 
         <div id="tab-one-panel" class="panel active">             
@@ -75,18 +75,13 @@ while(have_posts()) {
           <p class="headline headline--medium"><?php the_field('content_part_15_text'); ?></p>
         </div>
         <div id="tab-four-panel" class="panel">
-              <h3 class="headline headline--medium"><?php the_title(); ?> Videos</h3>
-              <?php 
-              $video = get_field('content_link_1'); 
-              if($video) { ?>
-                <p class="headline headline--medium"><?php the_field('video_description_1'); ?></p>
-                <?php the_field('content_link_1'); ?>
-                <p class="headline headline--medium"><?php the_field('video_description_2'); ?></p>
-              <?php } ?>
-              <h3 class="headline headline--medium"><i>Noch keine Videos vorhanden</i></h3>            
+            <h3 class="headline headline--medium">Alle Erfahrungsberichte zu <?php the_title(); ?></h3>
+          <p class="headline headline--medium"><?php the_field('testimonial_shortcode_slider'); ?></p>
+          <hr class="section-break">
+          <h3 class="headline headline--medium">Schreibe deinen Erfahrungsbericht zu <?php the_title(); ?></h3>
+          <p class="headline headline--medium"><?php the_field('testimonial_shortcode_form'); ?></p>          
             </div>
 
-    
 
       <div class="post-pag-wrap">
 
@@ -132,9 +127,18 @@ while(have_posts()) {
               echo '<hr class="section-break">';
               echo '<h2 class="headline headline--medium">Magazin:</h2>';
               while($verwandterMagazinbeitrag->have_posts()) {
-                $verwandterMagazinbeitrag->the_post(); 
-                get_template_part('template-parts/content-post', 'excerpt');
+                $verwandterMagazinbeitrag->the_post();?>
+                <div class="post-item">
+                  <h2 class="headline headline--medium headline--post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+                  <div class="generic-content">
+                    <?php the_excerpt(); ?>
+                    <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Lesen &raquo;</a></p>
+                  </div>
+
+                </div>
  
+              <?php
               } wp_reset_postdata();
             }
           ?>
@@ -161,9 +165,22 @@ while(have_posts()) {
             echo '<hr class="section-break">';
             echo '<h2 class="headline headline--medium">Beschwerden:</h2>';     
             while($passendeBeschwerde->have_posts()) {
-              $passendeBeschwerde->the_post(); 
-              get_template_part('template-parts/content-beschwerde', 'excerpt');
+              $passendeBeschwerde->the_post();?>
+              <div class="row group">
+                
+              <div class="post-item"> 		
+                <h2 class="headline headline--medium headline--post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
+                <div>
+                  <?php if (has_excerpt()) {
+                    echo get_the_excerpt();
+                    } else {
+                    echo wp_trim_words(get_field('main_body_content'), 20); 
+                    } ?>
+                    <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Lesen &raquo;</a></p>
+                </div>
+              </div> 
+              <?php
               } wp_reset_postdata();
             }
           ?>
@@ -175,20 +192,12 @@ while(have_posts()) {
 
           if ($passendesHeilmittel) {
             echo '<hr class="section-break">';
-            echo '<h2 class="headline headline--medium-centered">Heilmittel:</h2>';
-            echo '<br>', '<br>', '<br>', '<br>';
+            echo '<h2 class="headline headline--medium">Heilmittel:</h2>';
           foreach($passendesHeilmittel as $heilmittel) { ?>
             <div class="row group">
-              <div class="one-third">
-                  <?php echo get_the_post_thumbnail($heilmittel); ?>
-            </div>
               
             <div class="post-item"> 		
               <h2 class="headline headline--medium headline--post-title"><a href="<?php echo get_the_permalink($heilmittel); ?>"><?php echo get_the_title($heilmittel); ?></a></h2>
-
-              <div class="metabox">
-                <p><?php echo get_the_category_list(', ') ?></p>
-              </div>
 
               <div>
                 <?php if (has_excerpt()) {
@@ -196,7 +205,7 @@ while(have_posts()) {
                   } else {
                   echo wp_trim_words(get_field('main_body_content'), 20); 
                   } ?>
-                  <p><a class="btn btn--blue-margin-top" href="<?php echo get_the_permalink($heilmittel); ?>">Lesen &raquo;</a></p>
+                  <p><a class="btn btn--blue" href="<?php echo get_the_permalink($heilmittel); ?>">Lesen &raquo;</a></p>
               </div>
             </div>
           <?php 
@@ -210,20 +219,12 @@ while(have_posts()) {
 
           if ($passendesHeilmittel) {
             echo '<hr class="section-break">';
-            echo '<h2 class="headline headline--medium-centered">Vitalstoff:</h2>';
-            echo '<br>', '<br>', '<br>', '<br>';
+            echo '<h2 class="headline headline--medium">Vitalstoff:</h2>';
           foreach($passendesHeilmittel as $heilmittel) { ?>
             <div class="row group">
-              <div class="one-third">
-                  <?php echo get_the_post_thumbnail($heilmittel); ?>
-            </div>
               
             <div class="post-item"> 		
               <h2 class="headline headline--medium headline--post-title"><a href="<?php echo get_the_permalink($heilmittel); ?>"><?php echo get_the_title($heilmittel); ?></a></h2>
-
-              <div class="metabox">
-                <p><?php echo get_the_category_list(', ') ?></p>
-              </div>
 
               <div>
                 <?php if (has_excerpt()) {
@@ -231,7 +232,7 @@ while(have_posts()) {
                   } else {
                   echo wp_trim_words(get_field('main_body_content'), 20); 
                   } ?>
-                  <p><a class="btn btn--blue-margin-top" href="<?php echo get_the_permalink($heilmittel); ?>">Lesen &raquo;</a></p>
+                  <p><a class="btn btn--blue" href="<?php echo get_the_permalink($heilmittel); ?>">Lesen &raquo;</a></p>
               </div>
             </div>
           <?php 

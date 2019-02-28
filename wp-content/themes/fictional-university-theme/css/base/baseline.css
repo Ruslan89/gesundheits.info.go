@@ -4,26 +4,17 @@
   }
 }
 
+@define-mixin atSmallMedium {
+  @media (min-width: 767px) {
+    @mixin-content;
+  }
+}
+
 @define-mixin atMedium {
-  @media (min-width: 800px) {
+  @media (min-width: 960px) {
     @mixin-content;
   }
 }
-
-@define-mixin atLarge {
-  @media (min-width: 1010px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin clearfix { 
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-}
-
 
 body {
   color: #333;
@@ -47,8 +38,6 @@ a:hover {
 
 p, ul, ol {
   margin: 0 0 1.65em 0;
-  font-size: 1.1rem;
-  font-weight: 375;
 }
 
 p, li {

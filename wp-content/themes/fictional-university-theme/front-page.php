@@ -30,19 +30,19 @@ get_header();
         
         <div class="row group">
           <div class="one-half">
-              <?php the_post_thumbnail('professorPortrait'); ?>
+              <?php the_post_thumbnail('heilmittelLandscape'); ?>
         </div>
           
         <div class="post-item"> 		
           <h2 class="event-summary__title headline headline--tiny"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-
+          
           <div>
             <?php if (has_excerpt()) {
               echo get_the_excerpt();
               } else {
               echo wp_trim_words(get_field('main_body_content'), 20); 
               } ?>
-              <p><a class="btn btn--blue-margin-top" href="<?php the_permalink(); ?>">Lesen &raquo;</a></p>
+              <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Lesen &raquo;</a></p>
           </div>
         </div>
             </div> 
@@ -68,7 +68,7 @@ get_header();
             
             <div class="row group">
               <div class="one-half">
-                  <?php the_post_thumbnail('professorPortrait'); ?>
+                  <?php the_post_thumbnail('heilmittelLandscape'); ?>
             </div>
               
             <div class="post-item"> 		
@@ -81,7 +81,7 @@ get_header();
                   echo wp_trim_words(get_field('main_body_content'), 20); 
                   } ?>
                   
-                  <p><a class="btn btn--blue-margin-top" href="<?php the_permalink(); ?>">Lesen &raquo;</a></p>
+                  <p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Lesen &raquo;</a></p>
               </div>
             </div>
           </div>
@@ -97,34 +97,34 @@ get_header();
   </div>   
   
   <div class="hero-slider">
-  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/bus.jpg') ?>);">
+  <?php 
+  $homepageBeschwerden = new WP_Query(array(
+    'posts_per_page' => 2,
+    'post_type' => 'heilmittel',
+    'order' => 'ASC',
+  ));
+
+  while($homepageBeschwerden->have_posts()) {
+    $homepageBeschwerden->the_post(); ?>
+
+  
+  <!--<div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('images/bus.jpg')?>);">
     <div class="hero-slider__interior container">
       <div class="hero-slider__overlay">
-        <h2 class="headline headline--medium t-center">Heilmittel: CBD</h2>
-        <p class="t-center">Das beste gegen Stress, Panikattaken bis Depressionen.</p>
-        <p class="t-center no-margin"><a href="<?php echo site_url('/heilmittel/cbd') ?>" class="btn btn--blue">Mehr erfahren</a></p>
-      </div>
-    </div> 
-  </div>
-  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/apples.jpg') ?>);">
-    <div class="hero-slider__interior container">
-      <div class="hero-slider__overlay">
-        <h2 class="headline headline--medium t-center">Heilmittel: DMSO</h2>
-        <p class="t-center">Die Lösung: Prellungen, Schnittwunden bis Gelenkbeschwerden</p>
-        <p class="t-center no-margin"><a href="<a href="<?php echo site_url('/heilmittel/dmso') ?>" class="btn btn--blue">Mehr erfahren</a></p>
-      </div>
-    </div>
-  </div>
-  <div class="hero-slider__slide" style="background-image: url(<?php echo get_theme_file_uri('/images/bread.jpg') ?>);">
-    <div class="hero-slider__interior container">
-      <div class="hero-slider__overlay">
-        <h2 class="headline headline--medium t-center">Heilmittel: Kolloidales Silber</h2>
-        <p class="t-center">Infekte bis Allergien - Nebenwirkungsfrei behandeln</p>
-        <p class="t-center no-margin"><a href="#" class="btn btn--blue">Learn more</a></p>
+        <h2 class="headline headline--medium t-center"><?php the_title(); ?></h2>
+        <p class="t-center"><?php if (has_excerpt()) {
+              echo get_the_excerpt();
+            } else {
+              echo wp_trim_words(get_field('main_body_content'), 20);
+            } ?></p>
+        <p class="t-center no-margin"><a href="<?php the_permalink(); ?>" class="btn btn--blue">Mehr erfahren</a></p>
       </div>
     </div>
-  </div>
-</div> 
+  </div>-->
+
+  <?php }
+  ?>
+</div>
 
 	
 <?php 

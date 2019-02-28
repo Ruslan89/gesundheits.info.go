@@ -1,6 +1,6 @@
 <div class="row group">
     <div class="one-third">
-        <?php the_post_thumbnail('professorPortrait'); ?>
+        <?php the_post_thumbnail('professorLandscape'); ?>
 	</div>
 		
 	<div class="post-item"> 		
@@ -18,4 +18,4 @@
 				} ?>
 				<p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Lesen &raquo;</a></p>
 		</div>
-	</div>
+	</div> 

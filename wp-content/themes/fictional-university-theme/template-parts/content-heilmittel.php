@@ -1,6 +1,6 @@
 <div class="row group">
     <div class="one-third">
-        <?php the_post_thumbnail('professorPortrait'); ?>
+        <?php the_post_thumbnail('heilmittelLandscape'); ?>
 	</div>
 		
 	<div class="post-item"> 		
@@ -16,6 +16,6 @@
 				} else {
 				echo wp_trim_words(get_field('main_body_content'), 20); 
 				} ?>
-				<p><a class="btn blue-margin-top" href="<?php the_permalink(); ?>">Lesen &raquo;</a></p>
+				<p><a class="btn btn--blue" href="<?php the_permalink(); ?>">Lesen &raquo;</a></p>
 		</div>
 	</div>

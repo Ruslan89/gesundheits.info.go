@@ -2,20 +2,21 @@
 
 get_header();
 pageBanner(array(
-  'title' => 'Magazin',
+  'title' => 'GU Magazin',
   'subtitle' => 'Rund um Gesundheit'
 ));
- ?>
+ ?> 
 <div class="container container--narrow page-section">
 <?php
   while(have_posts()) {
     the_post(); ?>
+    <div class="row group">
+    <div class="one-third">
+        <?php the_post_thumbnail('heilmittelLandscape'); ?>
+  </div>
+  
     <div class="post-item">
       <h2 class="headline headline--medium headline--post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-      
-      <div class="metabox">
-      <p>Geschrieben von <?php the_author_posts_link() ?> am <?php the_time('d.m.y') ?> in <?php echo get_the_category_list(', ') ?></p>
-      </div>
 
       <div class="generic-content">
         <?php the_excerpt(); ?>
@@ -24,7 +25,7 @@ pageBanner(array(
 
     </div>
   <?php }
-  echo paginate_links();
+  echo paginate_links(); 
 ?>
 </div>
 
